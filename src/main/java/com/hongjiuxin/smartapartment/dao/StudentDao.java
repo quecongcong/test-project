@@ -6,6 +6,6 @@ import org.apache.ibatis.annotations.Param;
 
 public interface StudentDao {
 
-	public List<Student> queryByPage(@Param("start") Integer start,
+	 List<Student> queryByPage(@Param("start") Integer start,
         @Param("pageSize") Integer pageSize);
 }

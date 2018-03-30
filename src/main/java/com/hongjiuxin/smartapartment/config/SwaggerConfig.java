@@ -32,7 +32,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo buildApiInf() {
-        return new ApiInfoBuilder().title("测试:智慧公寓开放接口API").termsOfServiceUrl("http://localhost:8080/mvntest/").description("测试接口文档")
+        return new ApiInfoBuilder().title("测试:智慧公寓开放接口API").termsOfServiceUrl("http://localhost:8080/smartapartment/").description("测试接口文档")
             .contact(new Contact("mqs", "#", "#")).version("1.0").build();
     }
 

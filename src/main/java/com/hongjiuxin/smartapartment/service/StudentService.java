@@ -5,6 +5,6 @@ import java.util.List;
 
 public interface StudentService {
 
-	public List<Student> queryByPage(Integer start, Integer pageSize);
+	List<Student> queryByPage(Integer start, Integer pageSize);
 
 }
