@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mqs.mvntest.dao.StudentDao">
+
+	<!-- 获取学生列表 -->
+	<select id="queryByPage" resultType="com.mqs.mvntest.model.Student">
+		select * from student
+		limit
+		#{start},#{pageSize}
+	</select>
+
+	<!-- 获取学生记录条数 -->
+	<!-- <select id="getStudentCount" resultType="Integer">
+		select count(*) from student
+	</select> -->
+	
+	<!-- 插入学生信息 -->
+	<!-- <insert id="insertStu" parameterType="com.souche.demo.entity.Student" useGeneratedKeys="true" keyProperty="id">
+		insert into student
+		(name,age,classid) 
+		values(#{name},#{age},#{classid})
+	</insert> -->
+	
+	<!-- 插入学生信息 -->
+	<!-- <insert id="insertStu1" parameterType="com.souche.demo.action.StuDo" useGeneratedKeys="true" keyProperty="id">
+		insert into student
+		(name,age,classid) 
+		values(#{name},#{age},#{classid})
+	</insert> -->
+</mapper>
